@@ -1,0 +1,124 @@
+.program {
+  margin: 0;
+  padding: 0;
+}
+
+.program__container {
+  min-width: 280px;
+  margin: 0 20px;
+}
+
+.program__button {
+  height: 40px;
+  width: 280px;
+  .ff-oswald;
+  font-size: 14px;
+  .f-normal;
+  .center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.program__list {
+  .ls-none;
+  padding: 0;
+  margin: 0;
+}
+
+.program__item {
+  background-color: #f2f2f2;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 22px;
+  font-weight: normal;
+  .f-normal;
+}
+
+.program__title {
+  position: relative;
+  .ff-oswald;
+  font-size: 24px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1.54;
+  text-align: left;
+  color: @black;
+  margin-left: 72px;
+  padding-top: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: @light-green;
+    display: block;
+    position: absolute;
+    left: -71px;
+    border-radius: 360px;
+    top: 0;
+  }
+
+  &--slim::after {
+    content: url(../img/icon-cat-slim.svg);
+    width: 35px;
+    height: 49px;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: 0;
+
+  }
+
+
+
+  &--pro::after {
+    content: url(../img/icon-cat-pro.svg);
+    width: 67px;
+    height: 28px;
+    display: block;
+    position: absolute;
+    left: -82px;
+    top: 15px;
+  }
+}
+
+.program__description {
+  font-family: Arial;
+  font-size: 14px;
+  .f-normal;
+  line-height: 1.29;
+  text-align: left;
+  color: @dark-grey;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 24px;
+
+}
+
+.program__link {
+  position: relative;
+  .ff-oswald;
+  font-size: 16px;
+  .f-normal;
+  line-height: 1;
+  text-align: left;
+  color: @black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 22px;
+  display: block;
+  position: relative;
+
+  &::after {
+    content: url(../img/icon-right-arrow-long.svg);
+    width: 25px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    left: 97px;
+    top: 0;
+  }
+}
