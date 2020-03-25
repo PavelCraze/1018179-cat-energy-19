@@ -1,0 +1,141 @@
+.example {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.example__container {
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+
+.example__title {
+  .ff-oswald;
+  font-size: 36px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+  color: @black;
+}
+
+.example__tagline {
+  font-family: Arial;
+  font-size: 14px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1.29;
+  text-align: left;
+  color:@dark-grey;
+}
+
+.example__result {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.example__total {
+  text-transform: uppercase;
+  .ff-oswald;
+  font-size: 14px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  .center;
+  color: @black;
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+
+
+
+.result__item {
+  position: relative;
+  text-align: center;
+  width: 124px;
+  border-radius: 3px;
+  border: solid 1px @light-grey;
+  background-color: inherit;
+}
+
+.result__total {
+  .ff-oswald;
+  font-size: 24px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1;
+  .center;
+  color: @black;
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+.result__text {
+  width: 87px;
+  height: 19px;
+  font-family: Arial;
+  font-size: 12px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  .center;
+  color: @dark-grey;
+  background-color: #f2f2f2;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  bottom: -10px;
+
+}
+
+
+.comparison__form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 39px;
+}
+
+.comparison__button {
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  width: 40px;
+  height: 15px;
+  .ff-oswald;
+  font-size: 16px;
+  .f-normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: right;
+  color: @black;
+}
+
+.comparison__scale {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: solid 1px @light-grey;
+  background-color: @white;
+  margin-left: 19px;
+  margin-right: 18px;
+}
+
+.comparison__progress {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @light-green;
+  margin-left: 5px;
+  margin-top: 3px;
+}
