@@ -9,8 +9,16 @@
     line-height: 1.25;
     letter-spacing: normal;
     .center;
-    .t-upper;
+    text-transform: uppercase;
     color: @white;
+    &:hover,
+    :focus{
+      background-color: #5eaa2f;
+    }
+    &:active{
+      background-color: #5eaa2f;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--grey {
@@ -21,7 +29,7 @@
     .f-normal;
     line-height: 1.25;
     .center;
-    .t-upper;
+    text-transform: uppercase;
     color: @dark-grey;
   }
 }
