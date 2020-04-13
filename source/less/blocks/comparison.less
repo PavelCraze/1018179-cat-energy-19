@@ -1,0 +1,117 @@
+.comparison__form {
+  .mp-zero;
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 39px;
+}
+
+.comparison__button {
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  width: 40px;
+  height: 15px;
+  .ff-oswald;
+  font-size: 16px;
+  .f-normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: right;
+  color: @black;
+}
+
+.comparison__scale {
+  position: relative;
+  margin-top: 2px;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: solid 1px @light-grey;
+  background-color: @white;
+  margin-left: 19px;
+  margin-right: 18px;
+}
+
+.comparison__progress {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @light-green;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.comparison__img{
+  &--after{
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comparison {
+    padding: 0 20px;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    position: relative;
+  }
+
+  .comparison__img {
+    display: block;
+    position: absolute;
+    top: -161px;
+    left: 40px;
+
+    &--before{
+      clip: rect(auto, 345px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 345px);
+    }
+  }
+
+  .comparison__form {
+    padding-top: 369px;
+  }
+
+  .comparison__scale {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #cdcdcd;
+    margin-top: 7px;
+  }
+
+  .comparison__progress {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0px 2px 5px 0 var(--black-15);
+    border: solid 1px @light-grey;
+    background-color: #ffffff;
+    border-radius: 360px;
+    margin-left: 198px;
+    top: -18px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 360px;
+      background-color: @light-green;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+
+    }
+  }
+}
+@media (min-width: @desktop-width){
+  .comparison{
+    padding-right: 80px;
+    width: 50%;
+  }
+}

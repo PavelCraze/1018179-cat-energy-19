@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   margin: 0;
   padding: 0;
 
@@ -17,7 +18,7 @@
 
 .contacts__title {
   display: block;
-  width: 123px;
+  max-width: 160px;
   .ff-oswald;
   font-size: 16px;
   .f-normal;
@@ -26,15 +27,16 @@
   letter-spacing: normal;
   text-align: left;
   color: @black;
-  margin-left: 26px;
-  margin-top: 31px;
+  margin-left: 19px;
+  margin-top: 29px;
   margin-bottom: 26px;
   text-transform: uppercase;
 }
 
 .contacts__tagline {
+  .mp-zero;
   display: block;
-  width: 134px;
+  max-width: 160px;
   font-family: Arial;
   font-size: 14px;
   .f-normal;
@@ -42,7 +44,41 @@
   letter-spacing: normal;
   text-align: left;
   color: @dark-grey;
-  margin-left: 19px;
-  margin-right: 25px;
-  margin-top: 33px;
+  margin-top: 28px;
+}
+
+.map {
+  display: block;
+  min-width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__info {
+    justify-content: space-between;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 1.25;
+    margin-left: 71px;
+  }
+
+  .contacts__tagline {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-right: 72px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .contacts__container {
+    position: absolute;
+    left: 40px;
+    top: 0%;
+    max-width: 570px;
+    width: 100%;
+    background: #ffffff;
+    padding: 32px 35px;
+    transform: translateY(48%);
+  }
 }

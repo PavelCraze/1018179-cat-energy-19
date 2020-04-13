@@ -18,73 +18,145 @@
   letter-spacing: normal;
   text-align: left;
   color: @black;
+  margin-top: 15px;
 }
 
 .features__list {
-  .ls-none;
-  margin-bottom: 42px;
-  padding-left: 80px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+  counter-reset: section;
+  margin-bottom: 23px;
+}
+
+.features__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
 }
 
 .features__item {
-  position: relative;
-  font-family: Arial;
-  font-size: 14px;
-  .f-normal;
-  font-weight: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  columns: @dark-grey;
-  margin-bottom: 20px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 
   &::before {
     content: "";
-    height: 60px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 20px;
     width: 60px;
-    background-color: @light-green;
-    display: block;
-    position: absolute;
-    left: -80px;
+    height: 60px;
+    background-color: #68b738;
+    background-size: 50px;
   }
 
-  &--vit::after {
-    content: url(../img/advantage-leaf@1x.png);
-    width: 26px;
-    height: 29px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: -73px;
+  &--vit::before {
+    background-image: url(../../img/advantage-leaf@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  &--powder::after {
-    content: url(../img/advantage-powder@1x.png);
-    width: 26px;
-    height: 29px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: -73px;
+  &--powder::before {
+    background-image: url(../../img/advantage-powder@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  &--func::after {
-    content: url(../img/advantage-dining@1x.png);
-    width: 26px;
-    height: 29px;
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: -73px;
+  &--func::before {
+    background-image: url(../../img/advantage-dining@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  &--time::after {
-    content: url(../img/advantage-clock@1x.png);
-    width: 26px;
-    height: 29px;
+  &--time::before {
+    background-image: url(../../img/advantage-clock@1x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/*Планшетная версия*/
+
+@media (min-width: @tablet-width) {
+
+
+  .features__title {
+    font-size: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    .mp-zero;
+    counter-reset: item;
+  }
+
+  .features__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
     display: block;
-    position: absolute;
-    top: 5px;
-    left: -73px;
+    min-height: 230px;
+    margin-bottom: 87px;
+
+
+    &::after {
+      counter-increment: item;
+      content: counter(item) "";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: -38px;
+      left: 140px;
+      font-family: Oswald, Arial, sans-serif;
+      font-size: 280px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: #f2f2f2;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .features__text {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+
+    &::after {
+      left: 155px;
+    }
   }
 }
