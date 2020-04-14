@@ -7,13 +7,14 @@
 .example__container {
   position: relative;
   min-width: 320px;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
 
 .example__title {
+  .mp-zero;
   display: block;
-  padding-top: 18px;
+  padding-top: 17px;
   .ff-oswald;
   font-size: 36px;
   .f-normal;
@@ -21,7 +22,7 @@
   line-height: 1.67;
   text-align: left;
   color: @black;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .example__tagline {
@@ -44,19 +45,6 @@
   margin-top: 25px;
 }
 
-.example__total {
-  text-transform: uppercase;
-  .ff-oswald;
-  font-size: 14px;
-  .f-normal;
-  font-weight: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  .center;
-  color: @black;
-  margin-top: 36px;
-  margin-bottom: 34px;
-}
 
 
 
@@ -87,7 +75,7 @@
 .result__text {
   height: 19px;
   width: 87px;
-  padding: 0 10px;
+  padding: 0 4px;
   font-family: Arial;
   font-size: 12px;
   .f-normal;
@@ -100,10 +88,24 @@
   display: block;
   position: absolute;
   z-index: 2;
-  bottom: -12px;
-  left: 17px;
-
+  bottom: -11px;
+  left: 18px;
 }
+
+.example__total {
+  text-transform: uppercase;
+  .ff-oswald;
+  font-size: 14px;
+  .f-normal;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  .center;
+  color: @black;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
 
 @media (min-width: @tablet-width) {
   .example {
@@ -164,6 +166,7 @@
     margin-left: 167px;
   }
 }
+
 /*Десктопная версия*/
 
 @media (min-width: @desktop-width) {
@@ -174,12 +177,12 @@
     flex-wrap: wrap;
   }
 
-  .example__container{
+  .example__container {
     background-color: #f2f2f2;
     width: 50%;
   }
 
-  .example__title{
+  .example__title {
     .mp-zero;
     padding-left: 110px;
     margin-bottom: 66px;
@@ -189,23 +192,24 @@
     left: 100vw;
   }
 
-  .example__tagline{
+  .example__tagline {
     width: 435px;
     margin-left: 80px;
     margin-top: 71px;
   }
 
-  .example__result{
+  .example__result {
     margin-left: 80px;
     margin-top: 71px;
     padding-bottom: 63px;
   }
 
-  .result__text{
+  .result__text {
     background-color: #f2f2f2;
 
   }
-  .example__total{
+
+  .example__total {
     width: 326px;
     margin-left: 80px;
     text-align: justify;

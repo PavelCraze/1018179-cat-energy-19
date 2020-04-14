@@ -25,7 +25,7 @@
 .catalog__item {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid @light-grey;
 }
 
@@ -38,8 +38,8 @@
 .item__wrapper {
   display: flex;
   padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 0px;
+  padding-right: 19px;
+  margin-bottom: -3px;
 }
 
 .item__link {
@@ -57,7 +57,7 @@
 }
 
 .item__name {
-  width: 72px;
+  width: 75px;
   height: 35px;
   font-family: Oswald;
   font-size: 16px;
@@ -127,8 +127,8 @@
   .center;
   text-transform: uppercase;
   color: #111111;
-  margin-top: 83px;
-  margin-bottom: 11px;
+  margin-top: 77px;
+  margin-bottom: 10px;
 
   &::before {
     content: " ";
@@ -140,17 +140,19 @@
     background: #ffffff url(../img/icon-plus-mobile.svg) no-repeat center;
     left: 50%;
     transform: translateX(-50%);
-    top: -50px;
+    top: -52px;
   }
 }
 
 .expansion__description {
+  .mp-zero;
   font-family: Arial;
   font-size: 12px;
   .f-normal;
   line-height: 1.33;
   .center;
   color: #444444;
+  margin-bottom: 20px;
 }
 
 .expansion__button {
